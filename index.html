@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ISSALABS builds AI-native products, graph intelligence systems, and technical publishing infrastructure with commercial discipline."
+    />
+    <meta name="theme-color" content="#07090d" />
+    <title>ISSALABS | Intelligence Products, Graph Systems, Publishing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <canvas id="scene" class="scene" aria-hidden="true"></canvas>
+    <div class="grid-veil" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="aurora aurora-a" aria-hidden="true"></div>
+    <div class="aurora aurora-b" aria-hidden="true"></div>
+    <div class="orbit-shell" aria-hidden="true">
+      <span class="orbit orbit-a"></span>
+      <span class="orbit orbit-b"></span>
+      <span class="orbit orbit-c"></span>
+    </div>
+
+    <header class="topbar shell">
+      <a class="brand" href="#top" aria-label="ISSALABS home">
+        <span class="brand-kicker">ISSALABS</span>
+        <span class="brand-title">Independent Product Laboratory</span>
+      </a>
+      <nav class="nav">
+        <a href="#top">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#operating-model">Model</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="status-chip" aria-label="Operating node">
+        <span class="status-dot"></span>
+        <span>Operating Node / 01</span>
+      </div>
+    </header>
+
+    <main class="shell" id="top">
+      <section class="hero">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Independent research and product laboratory</p>
+          <h1><span class="hero-accent">ISSALABS</span> builds intelligent software with strategic discipline.</h1>
+          <p class="hero-lede">
+            We design products, graph systems, and publishing infrastructure that turn
+            research, narrative, and technical execution into durable market-facing assets.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#portfolio">Explore Portfolio</a>
+            <a class="btn btn-secondary" href="mailto:shangobashi@gmail.com">Contact Us</a>
+          </div>
+          <div class="hero-proof">
+            <article class="proof-item">
+              <strong>08</strong>
+              <span>Canonical portfolio surfaces</span>
+            </article>
+            <article class="proof-item">
+              <strong>03</strong>
+              <span>New live graph intelligence products</span>
+            </article>
+            <article class="proof-item">
+              <strong>P0</strong>
+              <span>Commercially legible execution standard</span>
+            </article>
+          </div>
+          <div class="trust-ribbon">
+            <span>AI product design</span>
+            <span>Graph intelligence</span>
+            <span>Distribution systems</span>
+            <span>Technical publishing</span>
+          </div>
+        </div>
+
+        <div class="hero-stage" data-reveal>
+          <article class="stage-panel stage-atlas" data-tilt>
+            <div class="panel-head">
+              <span>Signal Atlas</span>
+              <span>Node visualization</span>
+            </div>
+            <div class="atlas-screen">
+              <span class="atlas-ring atlas-ring-a"></span>
+              <span class="atlas-ring atlas-ring-b"></span>
+              <span class="atlas-axis atlas-axis-a"></span>
+              <span class="atlas-axis atlas-axis-b"></span>
+              <span class="atlas-link atlas-link-a"></span>
+              <span class="atlas-link atlas-link-b"></span>
+              <span class="atlas-link atlas-link-c"></span>
+              <span class="atlas-link atlas-link-d"></span>
+              <span class="atlas-node atlas-node-a"></span>
+              <span class="atlas-node atlas-node-b"></span>
+              <span class="atlas-node atlas-node-c"></span>
+              <span class="atlas-node atlas-node-d"></span>
+              <span class="atlas-node atlas-node-e"></span>
+              <span class="atlas-node atlas-node-f"></span>
+              <span class="atlas-label atlas-label-a">Products</span>
+              <span class="atlas-label atlas-label-b">Publishing</span>
+              <span class="atlas-label atlas-label-c">Signal Systems</span>
+            </div>
+            <div class="atlas-footer">
+              <div>
+                <strong>Products</strong>
+                <span>AI-native surfaces built to stand alone.</span>
+              </div>
+              <div>
+                <strong>Publishing</strong>
+                <span>Research and writing that compounds authority.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="stage-panel stage-ledger" data-tilt>
+            <div class="panel-head">
+              <span>Operating Ledger</span>
+              <span>Seed 20260326</span>
+            </div>
+            <div class="metric-stack">
+              <div class="metric">
+                <div class="metric-row">
+                  <span>Execution velocity</span>
+                  <strong>91%</strong>
+                </div>
+                <div class="metric-bar">
+                  <span style="--bar-width: 91%"></span>
+                </div>
+              </div>
+              <div class="metric">
+                <div class="metric-row">
+                  <span>Product readiness</span>
+                  <strong>84%</strong>
+                </div>
+                <div class="metric-bar">
+                  <span style="--bar-width: 84%"></span>
+                </div>
+              </div>
+              <div class="metric">
+                <div class="metric-row">
+                  <span>Narrative control</span>
+                  <strong>88%</strong>
+                </div>
+                <div class="metric-bar">
+                  <span>style="--bar-width: 88%"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="stage-panel stage-focus" data-tilt>
+            <div class="panel-head">
+              <span>Active Surfaces</span>
+              <span>Current posture</span>
+            </div>
+            <div class="focus-list">
+              <div class="focus-item">
+                <span>GraphPulse</span>
+                <strong>Narrative intelligence</strong>
+              </div>
+              <div class="focus-item">
+                <span>SignalGraph</span>
+                <strong>Structural network analysis</strong>
+              </div>
+              <div class="focus-item">
+                <span>CreatorGraph</span>
+                <strong>Twitter tribes &amp; influence mapping</strong>
+              </div>
+              <div class="focus-item">
+                <span>FieldTheory</span>
+                <strong>Windows bookmark archive CLI</strong>
+              </div>
+              <div class="focus-item">
+                <span>Publishing layer</span>
+                <strong>Authority and distribution</strong>
+              </div>
+            </div>
+            <div class="focus-tags">
+              <span>Signal</span>
+              <span>Systems</span>
+              <span>Distribution</span>
+              <span>Research</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="signal-ribbon" aria-label="ISSALABS disciplines">
+        <div class="ribbon-track">
+          <span>Applied AI Products</span>
+          <span>Graph Intelligence Systems</span>
+          <span>Technical Publishing Infrastructure</span>
+          <span>Commercially Legible Execution</span>
+          <span>Applied AI Products</span>
+          <span>Graph Intelligence Systems</span>
+          <span>Technical Publishing Infrastructure</span>
+          <span>Commercially Legible Execution</span>
+        </div>
+      </section>
+
+      <section class="framework-section" id="capabilities">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">Capabilities</p>
+          <h2>Built as a lab, not a brochure.</h2>
+          <p class="section-copy">
+            ISSALABS operates as a compact product laboratory: identifying wedges,
+            building credible software surfaces, and reinforcing them with intelligence
+            tooling and publishing systems.
+          </p>
+        </div>
+
+        <div class="framework-grid">
+          <article class="framework-card" data-reveal data-tilt>
+            <span class="card-index">01</span>
+            <h3>Product Strategy</h3>
+            <p>
+              Frame the opportunity with enough technical depth and market clarity
+              that the product can ship with conviction.
+            </p>
+          </article>
+          <article class="framework-card" data-reveal data-tilt>
+            <span class="card-index">02</span>
+            <h3>Intelligence Systems</h3>
+            <p>
+              Build tools that measure signal, graph structure, narrative velocity,
+              and distribution leverage across a market.
+            </p>
+          </article>
+          <article class="framework-card" data-reveal data-tilt>
+            <span class="card-index">03</span>
+            <h3>Publishing Engines</h3>
+            <p>
+              Pair software releases with writing and research that compound trust,
+              sharpen positioning, and extend distribution.
+            </p>
+          </article>
+          <article class="framework-card" data-reveal data-tilt>
+            <span class="card-index">04</span>
+            <h3>Brand Architecture</h3>
+            <p>
+              Treat every product, publication, and interaction as part of one coherent
+              system rather than a disconnected collection of launches.
+            </p>
+          </article>
+        </div>
+
+        <div class="evidence-band" data-reveal>
+          <div class="evidence-copy">
+            <p class="panel-kicker">Operating Principle</p>
+            <h3>Products generate insight. Publications compound authority.</h3>
+            <p>
+              The portfolio is structured as a system: each launch should sharpen the next one.
+            </p>
+          </div>
+          <div class="evidence-item">
+            <strong>AI</strong>
+            <span>Product surfaces</span>
+          </div>
+          <div class="evidence-item">
+            <strong>Graph</strong>
+            <span>Signal tooling</span>
+          </div>
+          <div class="evidence-item">
+            <strong>Media</strong>
+            <span>Publishing layer</span>
+          </div>
+          <div class="evidence-item">
+            <strong>Brand</strong>
+            <span>Coherent system</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section" id="portfolio">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">Portfolio</p>
+          <h2>Current products and publications inside the ISSALABS portfolio.</h2>
+          <p class="section-copy">
+            The portfolio includes product launches and blog surfaces together.
+            The publications remain inside the portfolio because they are part of the brand system,
+            not peripheral marketing collateral.
+          </p>
+        </div>
+
+        <div class="portfolio-layout">
+          <div class="portfolio-feature-stack" data-reveal>
+            <article class="feature-card feature-graphpulse" data-tilt>
+              <div class="panel-head">
+                <span>Graph Intelligence</span>
+                <span>Live</span>
+              </div>
+              <h3>GraphPulse</h3>
+              <p>
+                Narrative intelligence for monitoring emerging topics, acceleration points,
+                and amplification pathways before they harden into consensus.
+              </p>
+              <div class="feature-metrics">
+                <div>
+                  <strong>Velocity</strong>
+                  <span>Emergence tracking</span>
+                </div>
+                <div>
+                  <strong>Signal</strong>
+                  <span>Momentum analysis</span>
+                </div>
+                <div>
+                  <strong>Surface</strong>
+                  <span>Market-facing product</span>
+                </div>
+              </div>
+              <a href="https://graphpulse.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+            </article>
+
+            <article class="feature-card feature-signalgraph" data-tilt>
+              <div class="panel-head">
+                <span>Graph Intelligence</span>
+                <span>Live</span>
+              </div>
+              <h3>SignalGraph</h3>
+              <p>
+                Network intelligence for mapping communities, ranking influence,
+                detecting bridges, and modelling diffusion across the graph.
+              </p>
+              <div class="feature-metrics">
+                <div>
+                  <strong>Map</strong>
+                  <span>Community structure</span>
+                </div>
+                <div>
+                  <strong>Rank</strong>
+                  <span>Influence scoring</span>
+                </div>
+                <div>
+                  <strong>Simulate</strong>
+                  <span>Diffusion pathways</span>
+                </div>
+              </div>
+              <a href="https://signalgraph.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+            </article>
+
+            <article class="feature-card feature-creatorgraph" data-tilt>
+              <div class="panel-head">
+                <span>Graph Intelligence</span>
+                <span>Live</span>
+              </div>
+              <h3>CreatorGraph</h3>
+              <p>
+                Twitter tribe detection and influence scoring via client-side graph analysis.
+                Surfaces hidden connectors and community structure from your follow graph — no API keys, no servers.
+              </p>
+              <div class="feature-metrics">
+                <div>
+                  <strong>Tribes</strong>
+                  <span>Louvain community detection</span>
+                </div>
+                <div>
+                  <strong>SIGNAL</strong>
+                  <span>Betweenness centrality</span>
+                </div>
+                <div>
+                  <strong>Export</strong>
+                  <span>Shareable PNG maps</span>
+                </div>
+              </div>
+              <a href="https://creatorgraph.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+            </article>
+
+            <article class="feature-card feature-fieldtheory" data-tilt>
+              <div class="panel-head">
+                <span>Knowledge Infrastructure</span>
+                <span>Live</span>
+              </div>
+              <h3>FieldTheory</h3>
+              <p>
+                Windows-first bookmark archive CLI that keeps the local-first memory workflow intact.
+                Ports Chrome session sync to Windows, removes the external <code>sqlite3</code> dependency,
+                and exposes an <code>ftx</code> command surface for Codex-driven retrieval.
+              </p>
+              <div class="feature-metrics">
+                <div>
+                  <strong>Windows</strong>
+                  <span>Chrome sync workflow</span>
+                </div>
+                <div>
+                  <strong>Memory</strong>
+                  <span>Local SQLite FTS archive</span>
+                </div>
+                <div>
+                  <strong>Codex</strong>
+                  <span>Agent-facing CLI surface</span>
+                </div>
+              </div>
+              <a href="https://fieldtheory.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+            </article>
+          </div>
+
+          <div class="portfolio-ledger" data-reveal>
+            <div class="ledger-head">
+              <span>Canonical Portfolio</span>
+              <span>Authoritative project and publication index</span>
+            </div>
+
+            <div class="ledger-table">
+              <article class="ledger-row">
+                <div class="ledger-title">
+                  <span class="ledger-kind">AI Product</span>
+                  <strong>NanoGryo</strong>
+                </div>
+                <p class="ledger-role">Autonomous experimentation surface and lightweight intelligence layer.</p>
+                <div class="ledger-state"><span>Live</span></div>
+                <div class="ledger-link">
+                  <a href="https://nanogryo.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+                </div>
+              </article>
+
+              <article class="ledger-row">
+                <div class="ledger-title">
+                  <span class="ledger-kind">Growth Intelligence</span>
+                  <strong>FollowGraph</strong>
+                </div>
+                <p class="ledger-role">Relationship intelligence tooling for strategic growth and attention workflows.</p>
+                <div class="ledger-state"><span>Live</span></div>
+                <div class="ledger-link">
+                  <a href="https://followgraph.shangobashi.com" target="_blank" rel="noreferrer noopener">Open Project</a>
+                </div>
+              </article>
+
+              <article class="ledger-row">
+                <div class="ledger-title">
+                  <span class="ledger-kind">Graph Intelligence</span>
+                  <strong>GraphPulse</strong>
+                </div>
+                <p class="ledger-role">Narrative monitoring product for tracking emergence, movement, and amplification.</p>
+                <div class="ledger-state"><span>Live</span></div>
+                <div class="ledger-link">
+                  <a href="https://graphpulse.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+                </div>
+              </article>
+
+              <article class="ledger-row">
+                <div class="ledger-title">
+                  <span class="ledger-kind">Graph Intelligence</span>
+                  <strong>SignalGraph</strong>
+                </div>
+                <p class="ledger-role">Structural network product for community maps, leverage scoring, and diffusion analysis.</p>
+                <div class="ledger-state"><span>Live</span></div>
+                <div class="ledger-link">
+                  <a href="https://signalgraph.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+                </div>
+              </article>
+
+              <article class="ledger-row">
+                <div class="ledger-title">
+                  <span class="ledger-kind">Graph Intelligence</span>
+                  <strong>CreatorGraph</strong>
+                </div>
+                <p class="ledger-role">Twitter tribe detection and SIGNAL scoring — client-side graph intelligence, no API keys required.</p>
+                <div class="ledger-state"><span>Live</span></div>
+                <div class="ledger-link">
+                  <a href="https://creatorgraph.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+                </div>
+              </article>
+
+              <article class="ledger-row">
+                <div class="ledger-title">
+                  <span class="ledger-kind">Knowledge Infrastructure</span>
+                  <strong>FieldTheory</strong>
+                </div>
+                <p class="ledger-role">Windows-first bookmark archive CLI for local search, Chrome sync, and Codex-friendly memory workflows.</p>
+                <div class="ledger-state"><span>Live</span></div>
+                <div class="ledger-link">
+                  <a href="https://fieldtheory.issalabs.xyz" target="_blank" rel="noreferrer noopener">Open Project</a>
+                </div>
+              </article>
+
+              <article class="ledger-row">
+                <div class="ledger-title">
+                  <span class="ledger-kind">Publication</span>
+                  <strong>Klawie Neural Net</strong>
+                </div>
+                <p class="ledger-role">Primary technical publication for systems, architecture, and applied AI thinking.</p>
+                <div class="ledger-state"><span>Live</span></div>
+                <div class="ledger-link">
+                  <a href="https://klawieneuralnet.issalabs.xyz" target="_blank" rel="noreferrer noopener">Read Publication</a>
+                </div>
+              </article>
+
+              <article class="ledger-row">
+                <div class="ledger-title">
+                  <span class="ledger-kind">Publication</span>
+                  <strong>KlawieBlog</strong>
+                </div>
+                <p class="ledger-role">Secondary writing surface for execution notes, research drops, and sharper field observations.</p>
+                <div class="ledger-state"><span>Live</span></div>
+                <div class="ledger-link">
+                  <a href="https://klawieblog.issalabs.xyz" target="_blank" rel="noreferrer noopener">Read Publication</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-row">
+          <article class="publication-panel" data-reveal data-tilt>
+            <p class="panel-kicker">Publication Layer</p>
+            <h3>Blogs are an essential part of our portfolio, a window into the souls of our agentic system's inner workings.</h3>
+            <p>
+              Research, commentary, and execution notes are part of how ISSALABS builds
+              trust, distribution, and strategic framing around every technical release.
+            </p>
+          </article>
+          <article class="publication-panel" data-reveal data-tilt>
+            <p class="panel-kicker">Brand Architecture</p>
+            <h3>A tighter system beats a louder one.</h3>
+            <p>
+              The objective is not to launch disconnected experiments. It is to build a portfolio
+              whose products, writing, and positioning reinforce one another over time.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="operating-model" id="operating-model">
+        <div class="section-intro" data-reveal>
+          <p class="eyebrow">Operating Model</p>
+          <h2>How ISSALABS turns technical work into brand-level momentum.</h2>
+          <p class="section-copy">
+            The lab operates with a clear progression: identify the wedge, build the surface,
+            instrument the signal, and publish the thinking that makes the work legible.
+          </p>
+        </div>
+
+        <div class="model-grid">
+          <article class="model-panel" data-reveal data-tilt>
+            <p class="panel-kicker">01 / Thesis</p>
+            <h3>Find the opportunity with enough sharpness to matter.</h3>
+            <p>
+              Every project starts from a concrete wedge with technical specificity
+              and a believable path to utility.
+            </p>
+          </article>
+          <article class="model-panel" data-reveal data-tilt>
+            <p class="panel-kicker">02 / Surface</p>
+            <h3>Ship a product that can carry the idea on its own.</h3>
+            <p>
+              The product needs to read clearly, solve a real problem, and present itself
+              with enough polish to be trusted.
+            </p>
+          </article>
+          <article class="model-panel" data-reveal data-tilt>
+            <p class="panel-kicker">03 / Instrumentation</p>
+            <h3>Measure the market instead of guessing at it.</h3>
+            <p>
+              Intelligence tooling around narrative, distribution, and network structure
+              sharpens timing and decision quality.
+            </p>
+          </article>
+          <article class="model-panel" data-reveal data-tilt>
+            <p class="panel-kicker">04 / Compounding</p>
+            <h3>Publish enough thinking to create durable context.</h3>
+            <p>
+              The publication layer gives the portfolio continuity, credibility, and reach
+              beyond individual launches.
+            </p>
+          </article>
+        </div>
+
+        <div class="model-rail" data-reveal>
+          <div class="rail-step">
+            <span>Research</span>
+            <strong>Opportunity framing</strong>
+          </div>
+          <div class="rail-step">
+            <span>Build</span>
+            <strong>Launch-ready surface</strong>
+          </div>
+          <div class="rail-step">
+            <span>Signal</span>
+            <strong>Instrumentation and feedback</strong>
+          </div>
+          <div class="rail-step">
+            <span>Publish</span>
+            <strong>Authority and distribution</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-panel" id="contact" data-reveal>
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>If you need a product lab that can move from thesis to shipped surface, start here.</h2>
+          <p class="section-copy">
+            ISSALABS works across AI products, graph intelligence systems, growth tooling,
+            and technical publishing infrastructure.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:shangobashi@gmail.com">Contact Us</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-line" aria-hidden="true"></div>
+      <p>ISSALABS develops intelligent products, graph systems, and publishing infrastructure.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="./site.js"></script>
+  </body>
+</html>
